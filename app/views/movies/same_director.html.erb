@@ -1,0 +1,12 @@
+<h2>Movies Directed by <%= @movie.director %></h2>
+
+<ul>
+  <% @movies.each do |m| %>
+    <li>
+      <%= link_to m.title, movie_path(m) %> —
+      <%= m.release_date %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Back to #{@movie.title}", movie_path(@movie) %>
