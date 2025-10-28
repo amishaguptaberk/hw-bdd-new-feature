@@ -27,3 +27,7 @@ Then(/the director of "(.*)" should be "(.*)"/) do |movie_title, director_name|
   movie = Movie.find_by(title: movie_title)
   expect(movie.director).to eq director_name
 end
+
+When(/I confirm the deletion/) do
+  page.driver.browser.switch_to.alert.accept
+end
