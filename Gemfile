@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 ruby '2.6.6'
 gem 'rails', '4.2.10'
 
+# Specify compatible bundler version
+gem 'bundler', '~> 1.17.0'
+
 # for Heroku deployment
 group :development, :test do
   gem 'sqlite3', '1.3.11'
