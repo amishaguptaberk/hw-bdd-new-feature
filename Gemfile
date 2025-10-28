@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.6'
+ruby '3.3.8'
 gem 'rails', '4.2.10'
 
 # Specify compatible bundler version
